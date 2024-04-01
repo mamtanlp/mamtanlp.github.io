@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>AI-ML-NLP Lab</p>
     <p>IIT Patna, India</p>
-    <p>Bihat, Patna, India</p>
+    <p>Bihta, Patna, India</p>
 
 #news: true # includes a list of news items
 #latest_posts: true # includes a list of news items
