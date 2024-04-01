@@ -2,24 +2,23 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+#subtitle: <a href='#'>Affiliations</a>. Ph.D. Pursuing. Contacts. Moto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>AI-ML-NLP Lab</p>
+    <p>IIT Patna, India</p>
+    <p>Bihat, Patna, India</p>
 
-news: true # includes a list of news items
+#news: true # includes a list of news items
+#latest_posts: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am a Ph.D. student at the Indian Institute of Technology Patna, India, and a researcher in Natural Language Processing, under the supervision of Dr. Asif Ekbal. My research is focused on: (i). Advancing sentiment research in coarse-grained and fine-grained levels including low-resource domains and languages, (ii). Exposing the vulnerabilities of text classifiers builds on the top of pre-trained language models through adversarial attacks and further improving the robustness against these attacks, (iii). Emotion Detection.
+ 
+I have also worked on multimodal opinion mining and robustness of dialogue generation systems against adversarial attacks. Both the works are under-review. Currently, I am exploring the fairness of socially intelligent systems. 
