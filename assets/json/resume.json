@@ -111,6 +111,29 @@
       "summary": "Branch Topper in Masters"
     }
   ],
+  "publications": [
+    {
+      "name": "Atmosphere kamaal ka tha (was wonderful): A Multilingual Joint Learning Framework for Aspect Category Detection and Sentiment Classification",
+      "publisher": "IEEE Transactions on Computational Social Systems",
+      "releaseDate": "2024",
+      "url": "https://ieeexplore.ieee.org/document/10483106/",
+      "summary": ""
+    },
+    {
+      "name": "Service Is Good, Very Good or Excellent? Towards Aspect Based Sentiment Intensity Analysis",
+      "publisher": "European Conference on Information Retrieval",
+      "releaseDate": "2023",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-28244-7_43",
+      "summary": ""
+    },
+    {
+      "name": "Elevating Code-mixed Text Handling through Auditory Information of Words",
+      "publisher": "Conference on Empirical Methods in Natural Language Processing, Singapore",
+      "releaseDate": "2023",
+      "url": "https://aclanthology.org/2023.emnlp-main.987/",
+      "summary": ""
+    }
+  ],
   "projects": [
     {
       "name": "Sentiment, Emotion, Sarcasm & Hate speech Classifier",
