@@ -45,7 +45,7 @@
   "education": [
     {
       "institution": "Indian Institute of Technology Patna",
-      "location": "Bihta, Patna, Bihar, India",
+      "location": "Bihar, India",
       "url": "https://www.iitp.ac.in/~ai-nlp-ml/students.html",
       "area": "Natural Language Processing",
       "studyType": "PhD",
@@ -101,7 +101,7 @@
     {
       "title": "Google Travel Grant",
       "date": "2024",
-      "awarder": "Gogole",
+      "awarder": "Google",
       //"url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
       "summary": "To attend EMNLP 2024"
     },
