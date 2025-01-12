@@ -24,6 +24,15 @@
   },
   "work": [
     {
+      "name": "Kings College London",
+      "position": "Postdoctoral Researcher",
+      "url": "https://www.kcl.ac.uk/people/mamta",
+      "startDate": "2024",
+      "endDate": "-",
+      "summary": "Working on the robustness of fact verification system. Teaching Assistant for Machine Learning",
+      "highlights": ["Researcher in Natural Language Processing"]
+    },
+    {
       "name": "Indian Institute of Technology Patna, India",
       "position": "Research Fellow",
       "url": "https://www.iitp.ac.in/~ai-nlp-ml/students.html",
@@ -36,8 +45,8 @@
   "education": [
     {
       "institution": "Indian Institute of Technology Patna",
-      "location": "Bihar, India",
-      "url": "https://www.iitp.ac.in/",
+      "location": "Bihta, Patna, Bihar, India",
+      "url": "https://www.iitp.ac.in/~ai-nlp-ml/students.html",
       "area": "Natural Language Processing",
       "studyType": "PhD",
       "startDate": "2019",
@@ -90,6 +99,13 @@
   ],
   "awards": [
     {
+      "title": "Google Travel Grant",
+      "date": "2024",
+      "awarder": "Gogole",
+      //"url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
+      "summary": "To attend EMNLP 2024"
+    },
+    {
       "title": "Microsoft Travel Grant",
       "date": "2023",
       "awarder": "Microsoft",
@@ -109,29 +125,6 @@
       "awarder": "NIT Patna",
       //"url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
       "summary": "Branch Topper in Masters"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Atmosphere kamaal ka tha (was wonderful): A Multilingual Joint Learning Framework for Aspect Category Detection and Sentiment Classification",
-      "publisher": "IEEE Transactions on Computational Social Systems",
-      "releaseDate": "2024",
-      "url": "https://ieeexplore.ieee.org/document/10483106/",
-      "summary": ""
-    },
-    {
-      "name": "Service Is Good, Very Good or Excellent? Towards Aspect Based Sentiment Intensity Analysis",
-      "publisher": "European Conference on Information Retrieval",
-      "releaseDate": "2023",
-      "url": "https://link.springer.com/chapter/10.1007/978-3-031-28244-7_43",
-      "summary": ""
-    },
-    {
-      "name": "Elevating Code-mixed Text Handling through Auditory Information of Words",
-      "publisher": "Conference on Empirical Methods in Natural Language Processing, Singapore",
-      "releaseDate": "2023",
-      "url": "https://aclanthology.org/2023.emnlp-main.987/",
-      "summary": ""
     }
   ],
   "projects": [
@@ -219,9 +212,9 @@
       "reference": "Associate Professor, IIT Patna. Ph.D. Supervisor, Email: asif@iitp.ac.in"
     },
     {
-      "name": "Dr Mayank Agarwal",
+      "name": "Dr. Oana Cocarascu",
       "icon": "fa-solid fa-thumbtack",
-      "reference": "Assistant Professor, IIT Patna. Ph.D. Doctoral Committee, Email: mayank265@iitp.ac.in"
+      "reference": "Senior Lecturer in Artificial Intelligence, Kings College London. Email: oana.cocarascu@kcl.ac.uk"
     }
   ]
 }
