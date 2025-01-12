@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Mamta",
-    "label": "Research Fellow",
+    "label": "Postdoctoral Researcher",
     "image": "",
-    "email": "mamta_1921cs11@iitp.ac.in",
+    "email": "mamta20118@gmail.com, mamta.name@kcl.ac.uk",
     //"phone": "(+91) 94642 60531",
-    "url": "https://mamtanlp.github.io/",
+    "url": "https://www.kcl.ac.uk/people/mamta",
     "summary": "NLP Researcher",
     "location": {
-      "address": "AI-ML-NLP Lab, IIT Patna",
-      "postalCode": "801103",
-      "city": "Bihta, Patna",
-      "countryCode": "IN",
-      "region": "Bihar"
+      "address": "Department of Informatics, Kings College London",
+      "postalCode": "WC2B 4BG",
+      "city": "London",
+      "countryCode": "EN",
+      "region": "UK"
     },
     "profiles": [
       {
