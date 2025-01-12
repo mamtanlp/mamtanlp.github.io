@@ -9,9 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>AI-ML-NLP Lab</p>
-    <p>IIT Patna, India</p>
-    <p>Bihta, Patna, India</p>
+    <p>Department of Informatics</p>
+    <p>Faculty of Natural, Mathematical & Engineering Sciences</p>
+    <p>Kings College London</p>
 
 #news: true # includes a list of news items
 #latest_posts: true # includes a list of news items
