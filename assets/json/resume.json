@@ -8,7 +8,7 @@
     "url": "https://www.kcl.ac.uk/people/mamta",
     "summary": "NLP Researcher",
     "location": {
-      "address": "Department of Informatics, King's College London",
+      "address": "Department of Informatics, KCL",
       "postalCode": "WC2B 4BG",
       "city": "London",
       "countryCode": "EN",
@@ -24,7 +24,7 @@
   },
   "work": [
     {
-      "name": "King's College London",
+      "name": "KCL",
       "position": "Postdoctoral Researcher",
       "url": "https://www.kcl.ac.uk/people/mamta",
       "startDate": "2024",
@@ -214,7 +214,7 @@
     {
       "name": "Dr. Oana Cocarascu",
       "icon": "fa-solid fa-thumbtack",
-      "reference": "Senior Lecturer in Artificial Intelligence, King's College London. Email: oana.cocarascu@kcl.ac.uk"
+      "reference": "Senior Lecturer in Artificial Intelligence, KCL. Email: oana.cocarascu@kcl.ac.uk"
     }
   ]
 }
