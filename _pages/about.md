@@ -11,7 +11,7 @@ profile:
   more_info: >
     <!--p>Department of Informatics</p>
     <p>Faculty of Natural, Mathematical & Engineering Sciences</p-->
-    <p>Kings College London</p>
+    <p>King's College London</p>
 
 #news: true # includes a list of news items
 #latest_posts: true # includes a list of news items
