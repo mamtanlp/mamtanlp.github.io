@@ -79,21 +79,22 @@
   ],
   "interests": [
     {
-      "name": "Natural Language Processing",
+      "name": "Trustworthy and Robust AI",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "(1) Fine-grained and Coarse-grained sentiment analysis in low resource monolingual and code-mixed languages",
-        "(2) Aspect based sentiment intensity analysis (ABSIA)",
-        "(3) Multimodal Opinion Mining",
-        "(4) Measuring and Mitigating bias from socially responsible systems"
+        "(1) Robustness of NLP Systems",
+        "(2) Fairness",
+        "(3) Model Interpretability",
+        "(4) Socially Responsible Systems"
       ]
     },
     {
-      "name": "Adversarial Robustness in NLP",
+      "name": "Multilinguality",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "(1) Adversarial robustness of sentiment analysis models for high-resource and low- resource languages",
-        "(2) Adversarial robustness of dialogue generation systems"
+        "(1) Opinion Mining in low resource monolingual and code-mixed language",
+        "(2) Multimodal Multilingual AI Systems",
+        "(3) Multilingual Reasoning in Indian Languages",
       ]
     }
   ],
