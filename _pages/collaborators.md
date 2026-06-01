@@ -51,7 +51,7 @@ nav_order: 3
     <div class="card h-100 border-0 shadow-sm" style="background-color: var(--global-card-bg-color); border-radius: 14px;">
       <div class="card-body p-4">
         <h5 class="card-title font-weight-bold mb-1">
-          <a href="https://abhiramasubramanyam.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--global-theme-color); text-decoration: none;">Dr. Abhirama Subramanyam Penamakuri</a>
+          <a href="https://abhiram4572.github.io/" target="_blank" rel="noopener noreferrer" style="color: var(--global-theme-color); text-decoration: none;">Dr. Abhirama Subramanyam Penamakuri</a>
         </h5>
         <h6 class="card-subtitle mb-2" style="font-size: 0.9rem; color: var(--global-text-color-light);">Postdoc</h6>
         <p class="card-text" style="font-size: 0.95rem; color: var(--global-text-color);">Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</p>
