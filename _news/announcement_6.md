@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-📝 Paper accepted at **MeLLM workshop** (co-located with ACL 2026): *MLingualFC: Evaluating Jailbreak Vulnerabilities in Multilingual Vision-Language Models*.
+📝 Paper accepted at **MeLLM workshop** (co-located with ACL 2026): _MLingualFC: Evaluating Jailbreak Vulnerabilities in Multilingual Vision-Language Models_.

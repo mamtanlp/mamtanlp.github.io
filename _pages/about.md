@@ -19,6 +19,6 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a postdoctoral researcher in the Department of Informatics at King’s College London, where I work with Dr. Oana Cocarascu on enhancing the robustness of NLP systems. My work is dedicated to making AI more inclusive and accessible. I earned my Ph.D. from the AI-NLP-ML Lab at the Indian Institute of Technology Patna, with a thesis titled "Advancing Sentiment Analysis: From Diverse Domains to Multilinguality and Robustness." 
+I am a postdoctoral researcher in the Department of Informatics at King’s College London, where I work with Dr. Oana Cocarascu on enhancing the robustness of NLP systems. My work is dedicated to making AI more inclusive and accessible. I earned my Ph.D. from the AI-NLP-ML Lab at the Indian Institute of Technology Patna, with a thesis titled "Advancing Sentiment Analysis: From Diverse Domains to Multilinguality and Robustness."
 
-My research interests cover several key areas: Robustness of uni-modal and multi-modal AI systems, Fact Verification, Multilinguality, Multilingual reasoning in Indian languages, Model Interpretability, Fairness in Machine Learning, and opinion mining. 
+My research interests cover several key areas: Robustness of uni-modal and multi-modal AI systems, Fact Verification, Multilinguality, Multilingual reasoning in Indian languages, Model Interpretability, Fairness in Machine Learning, and opinion mining.

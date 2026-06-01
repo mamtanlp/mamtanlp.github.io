@@ -80,12 +80,7 @@
     {
       "name": "Trustworthy and Robust AI",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "(1) Robustness of NLP Systems",
-        "(2) Fairness",
-        "(3) Model Interpretability",
-        "(4) Socially Responsible Systems"
-      ]
+      "keywords": ["(1) Robustness of NLP Systems", "(2) Fairness", "(3) Model Interpretability", "(4) Socially Responsible Systems"]
     },
     {
       "name": "Multilinguality",
@@ -166,23 +161,13 @@
       "name": "Machine/Deep Learning",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Regression",
-        "Classification",
-        "Natural Language Processing"
-      ]
+      "keywords": ["Regression", "Classification", "Natural Language Processing"]
     },
     {
       "name": "Lib/Frameworks",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Scikit-learn",
-        "Keras",
-        "TensorFlow",
-        "PyTorch",
-        "Hugging Face"
-      ]
+      "keywords": ["Scikit-learn", "Keras", "TensorFlow", "PyTorch", "Hugging Face"]
     }
   ],
   "volunteer": [

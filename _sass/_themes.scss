@@ -171,8 +171,10 @@ html[data-theme="dark"] .navbar {
   border-radius: 14px !important;
   border: 1px solid var(--global-divider-color) !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02) !important;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+
   &:hover {
     transform: translateY(-4px) !important;
     box-shadow: 0 12px 30px rgba(59, 82, 217, 0.08) !important;
@@ -181,7 +183,7 @@ html[data-theme="dark"] .navbar {
 
 html[data-theme="dark"] .card {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
-  
+
   &:hover {
     box-shadow: 0 12px 30px rgba(38, 152, 186, 0.18) !important;
   }
@@ -191,8 +193,10 @@ html[data-theme="dark"] .card {
 ol.bibliography li {
   border-left: 3px solid transparent;
   padding-left: 15px !important;
-  transition: border-color 0.3s ease, padding-left 0.3s ease !important;
-  
+  transition:
+    border-color 0.3s ease,
+    padding-left 0.3s ease !important;
+
   &:hover {
     border-left-color: var(--global-theme-color) !important;
     padding-left: 18px !important;
@@ -200,7 +204,8 @@ ol.bibliography li {
 }
 
 /* 5. Micro-interactions for interactive elements */
-.btn, .badge {
+.btn,
+.badge {
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
   &:hover {
     transform: scale(1.05) !important;

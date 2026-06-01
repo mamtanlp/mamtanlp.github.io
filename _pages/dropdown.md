@@ -7,7 +7,7 @@ dropdown: true
 children:
   - title: blog
     permalink: /blog/
-  - title: divider    
+  - title: divider
   - title: people
     permalink: /profiles/
   - title: divider
@@ -16,5 +16,4 @@ children:
   - title: divider
   - title: teaching
     permalink: /teaching/
-
 ---
