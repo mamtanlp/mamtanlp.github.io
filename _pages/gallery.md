@@ -209,7 +209,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Presented <a href="https://link.springer.com/chapter/10.1007/978-3-031-28244-7_43" target="_blank" rel="noopener noreferrer">"Service is Good, Very Good or Excellent? Towards Aspect-Based Sentiment Intensity Analysis"</a> (my first conference, where it all began.)
+          Presented <a href="https://link.springer.com/chapter/10.1007/978-3-031-28244-7_43" target="_blank" rel="noopener noreferrer">"Service is Good, Very Good or Excellent? Towards Aspect-Based Sentiment Intensity Analysis"</a> (my first international travel.)
         </p>
         <div class="row">
           {% for i in (1..3) %}
