@@ -24,7 +24,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Presented two papers at VarDial: "Improving Dialect Robustness in Large Language Models via LoRA and Mixture-of-Experts" and "Indic-TunedLens: Interpreting Multilingual Models in Indian Languages"
+          Presented two papers at VarDial: <a href="https://aclanthology.org/2026.vardial-1.24/" target="_blank" rel="noopener noreferrer">"Improving Dialect Robustness in Large Language Models via LoRA and Mixture-of-Experts"</a> and <a href="https://aclanthology.org/2026.vardial-1.14/" target="_blank" rel="noopener noreferrer">"Indic-TunedLens: Interpreting Multilingual Models in Indian Languages"</a>
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -61,7 +61,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          I-GUARD: Interpretability-Guided Parameter Optimization for Adversarial Defense
+          Presented <a href="https://aclanthology.org/2025.findings-emnlp.1208/" target="_blank" rel="noopener noreferrer">"I-GUARD: Interpretability-Guided Parameter Optimization for Adversarial Defense"</a>
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -98,7 +98,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          My first paper as Dr. Mamta. FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models
+          Presented <a href="https://aclanthology.org/2025.naacl-long.534/" target="_blank" rel="noopener noreferrer">"FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models"</a> (my first paper as Dr. Mamta)
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -135,7 +135,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          BiasWipe: Mitigating Unintended Bias in Text Classifiers through Model Interpretability
+          Presented <a href="https://aclanthology.org/2024.emnlp-main.1164/" target="_blank" rel="noopener noreferrer">"BiasWipe: Mitigating Unintended Bias in Text Classifiers through Model Interpretability"</a>
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -172,7 +172,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Elevating Code-mixed Text Handling through Auditory Information of Words
+          Presented <a href="https://aclanthology.org/2023.emnlp-main.1008/" target="_blank" rel="noopener noreferrer">"Elevating Code-mixed Text Handling through Auditory Information of Words"</a>
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -209,7 +209,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          My first conference, where it all began.
+          Presented <a href="https://link.springer.com/chapter/10.1007/978-3-031-28244-7_43" target="_blank" rel="noopener noreferrer">"Service is Good, Very Good or Excellent? Towards Aspect-Based Sentiment Intensity Analysis"</a> (my first conference, where it all began.)
         </p>
         <div class="row">
           {% for i in (1..3) %}
