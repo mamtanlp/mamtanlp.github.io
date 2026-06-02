@@ -224,12 +224,7 @@ nav_order: 8
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
 
-              <div class="gallery-placeholder d-flex flex-column align-items-center justify-content-center w-100 h-100 p-3 text-center"
-                   style="border: 2px dashed var(--global-theme-color); border-radius: 12px; background: var(--global-card-bg-color); opacity: 0.85; transition: all 0.3s ease;">
-                <i class="fa-regular fa-image mb-2" style="font-size: 2.2rem; color: var(--global-theme-color); opacity: 0.7;"></i>
-                <span style="font-size: 0.85rem; font-weight: 600; color: var(--global-text-color);">Photo {{ i }}</span>
-                
-              </div>
+              
             </div>
           </div>
           {% endfor %}
