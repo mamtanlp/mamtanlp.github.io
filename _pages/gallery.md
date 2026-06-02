@@ -2,7 +2,6 @@
 layout: page
 permalink: /gallery/
 title: Gallery
-description: Photos and memories from various international conferences and academic events.
 nav: true
 nav_order: 8
 ---
@@ -10,7 +9,7 @@ nav_order: 8
 <div class="container py-4">
   <!-- Intro Text -->
   <p class="lead text-muted mb-5" style="font-size: 1.1rem; line-height: 1.6;">
-    A visual collection of memories, research presentations, and academic journeys from key conferences and collaborations around the world.
+    Memories from the Road: Across Countries and Conferences
   </p>
 
   <!-- Gallery List -->
