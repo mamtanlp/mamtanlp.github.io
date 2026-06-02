@@ -215,7 +215,7 @@ nav_order: 8
           {% for i in (1..3) %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ '/assets/img/gallery/ecir2023_' | append: i | append: '.jpg' | relative_url }}"
+              <img src="{{ '/assets/img/ecir2023_' | append: i | append: '.jpg' | relative_url }}"
                    class="w-100 h-100 position-absolute"
                    alt="ECIR 2023 Photo {{ i }}"
                    style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
