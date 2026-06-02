@@ -25,7 +25,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Presented two papers at VarDial
+          Presented two papers at VarDial: "Improving Dialect Robustness in Large Language Models via LoRA and Mixture-of-Experts" and "Indic-TunedLens: Interpreting Multilingual Models in Indian Languages"
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -62,7 +62,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Presented I-GUARD
+          I-GUARD: Interpretability-Guided Parameter Optimization for Adversarial Defense
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -99,7 +99,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          First paper as Dr. Mamta, FactEval
+          My first paper as Dr. Mamta. FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -136,7 +136,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Biaswipe paper
+          BiasWipe: Mitigating Unintended Bias in Text Classifiers through Model Interpretability
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -173,7 +173,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Elevating code-mixed...
+          Elevating Code-mixed Text Handling through Auditory Information of Words
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -210,7 +210,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Where my journey begins, my first conference
+          My first conference, where it all began.
         </p>
         <div class="row">
           {% for i in (1..3) %}
