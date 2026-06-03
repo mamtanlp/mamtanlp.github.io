@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-📄 Our paper **FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models** has been accepted at **NAACL 2025**!
+📄 Our paper **Federated Model Synchronization for Diagnostic Redefinition through a Novel Selective Parameter Unlearning** has been accepted at **WACV 2026**!
