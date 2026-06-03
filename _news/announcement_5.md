@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎓 Started as a **Postdoctoral Researcher** at the Department of Informatics, **King's College London**, working with Dr. Oana Cocarascu.
+📄 Our paper **FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models** has been accepted at **NAACL 2025**!
