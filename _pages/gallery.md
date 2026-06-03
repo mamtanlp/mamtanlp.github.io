@@ -98,7 +98,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Presented <a href="https://aclanthology.org/2025.naacl-long.534/" target="_blank" rel="noopener noreferrer">"FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models"</a> (my first paper as Dr. Mamta)
+          Presented <a href="https://aclanthology.org/2025.naacl-long.534/" target="_blank" rel="noopener noreferrer">"FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models"</a> (My first paper as Dr. Mamta.)
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -135,7 +135,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Presented <a href="https://aclanthology.org/2024.emnlp-main.1164/" target="_blank" rel="noopener noreferrer">"BiasWipe: Mitigating Unintended Bias in Text Classifiers through Model Interpretability"</a>
+          Presented <a href="https://aclanthology.org/2024.emnlp-main.1172/" target="_blank" rel="noopener noreferrer">"BiasWipe: Mitigating Unintended Bias in Text Classifiers through Model Interpretability"</a>
         </p>
         <div class="row">
           {% for i in (1..3) %}
@@ -172,7 +172,7 @@ nav_order: 8
         </div>
         <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
-          Presented <a href="https://aclanthology.org/2023.emnlp-main.1008/" target="_blank" rel="noopener noreferrer">"Elevating Code-mixed Text Handling through Auditory Information of Words"</a>
+          Presented <a href="https://aclanthology.org/2023.emnlp-main.987/" target="_blank" rel="noopener noreferrer">"Elevating Code-mixed Text Handling through Auditory Information of Words"</a>
         </p>
         <div class="row">
           {% for i in (1..3) %}
