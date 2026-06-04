@@ -26,17 +26,25 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented two papers at VarDial: <a href="https://aclanthology.org/2026.vardial-1.24/" target="_blank" rel="noopener noreferrer">"Improving Dialect Robustness in Large Language Models via LoRA and Mixture-of-Experts"</a> and <a href="https://aclanthology.org/2026.vardial-1.14/" target="_blank" rel="noopener noreferrer">"Indic-TunedLens: Interpreting Multilingual Models in Indian Languages"</a>
         </p>
-                <div class="row mt-3">
-          {% assign conf_photos = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/eacl2026'" %}
-          {% for photo in conf_photos %}
+        <div class="row">
+          {% for i in (1..3) %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ photo.path | relative_url }}"
+              <img src="{{ '/assets/img/gallery/eacl2026_' | append: i | append: '.jpg' | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="EACL 2026 Photo"
-                   style="object-fit: cover; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
+                   alt="EACL 2026 Photo {{ i }}"
+                   style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
+                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
+
+              <div class="gallery-placeholder d-flex flex-column align-items-center justify-content-center w-100 h-100 p-3 text-center"
+                   style="border: 2px dashed var(--global-theme-color); border-radius: 12px; background: var(--global-card-bg-color); opacity: 0.85; transition: all 0.3s ease;">
+                <i class="fa-regular fa-image mb-2" style="font-size: 2.2rem; color: var(--global-theme-color); opacity: 0.7;"></i>
+                <span style="font-size: 0.85rem; font-weight: 600; color: var(--global-text-color);">Photo {{ i }}</span>
+                <small class="text-muted" style="font-size: 0.7rem; margin-top: 5px; word-break: break-all;">assets/img/gallery/eacl2026_{{ i }}.jpg</small>
+              </div>
             </div>
           </div>
           {% endfor %}
@@ -55,17 +63,25 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://aclanthology.org/2025.findings-emnlp.1208/" target="_blank" rel="noopener noreferrer">"I-GUARD: Interpretability-Guided Parameter Optimization for Adversarial Defense"</a>
         </p>
-                <div class="row mt-3">
-          {% assign conf_photos = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/emnlp2025'" %}
-          {% for photo in conf_photos %}
+        <div class="row">
+          {% for i in (1..3) %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ photo.path | relative_url }}"
+              <img src="{{ '/assets/img/gallery/emnlp2025_' | append: i | append: '.jpg' | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="EMNLP 2025 Photo"
-                   style="object-fit: cover; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
+                   alt="EMNLP 2025 Photo {{ i }}"
+                   style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
+                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
+
+              <div class="gallery-placeholder d-flex flex-column align-items-center justify-content-center w-100 h-100 p-3 text-center"
+                   style="border: 2px dashed var(--global-theme-color); border-radius: 12px; background: var(--global-card-bg-color); opacity: 0.85; transition: all 0.3s ease;">
+                <i class="fa-regular fa-image mb-2" style="font-size: 2.2rem; color: var(--global-theme-color); opacity: 0.7;"></i>
+                <span style="font-size: 0.85rem; font-weight: 600; color: var(--global-text-color);">Photo {{ i }}</span>
+                <small class="text-muted" style="font-size: 0.7rem; margin-top: 5px; word-break: break-all;">assets/img/gallery/emnlp2025_{{ i }}.jpg</small>
+              </div>
             </div>
           </div>
           {% endfor %}
@@ -84,17 +100,25 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://aclanthology.org/2025.naacl-long.534/" target="_blank" rel="noopener noreferrer">"FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models"</a> (My first paper as Dr. Mamta.)
         </p>
-                <div class="row mt-3">
-          {% assign conf_photos = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/naacl2025'" %}
-          {% for photo in conf_photos %}
+        <div class="row">
+          {% for i in (1..3) %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ photo.path | relative_url }}"
+              <img src="{{ '/assets/img/gallery/naacl2025_' | append: i | append: '.jpg' | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="NAACL 2025 Photo"
-                   style="object-fit: cover; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
+                   alt="NAACL 2025 Photo {{ i }}"
+                   style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
+                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
+
+              <div class="gallery-placeholder d-flex flex-column align-items-center justify-content-center w-100 h-100 p-3 text-center"
+                   style="border: 2px dashed var(--global-theme-color); border-radius: 12px; background: var(--global-card-bg-color); opacity: 0.85; transition: all 0.3s ease;">
+                <i class="fa-regular fa-image mb-2" style="font-size: 2.2rem; color: var(--global-theme-color); opacity: 0.7;"></i>
+                <span style="font-size: 0.85rem; font-weight: 600; color: var(--global-text-color);">Photo {{ i }}</span>
+                <small class="text-muted" style="font-size: 0.7rem; margin-top: 5px; word-break: break-all;">assets/img/gallery/naacl2025_{{ i }}.jpg</small>
+              </div>
             </div>
           </div>
           {% endfor %}
@@ -113,17 +137,25 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://aclanthology.org/2024.emnlp-main.1172/" target="_blank" rel="noopener noreferrer">"BiasWipe: Mitigating Unintended Bias in Text Classifiers through Model Interpretability"</a>
         </p>
-                <div class="row mt-3">
-          {% assign conf_photos = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/emnlp2024'" %}
-          {% for photo in conf_photos %}
+        <div class="row">
+          {% for i in (1..3) %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ photo.path | relative_url }}"
-                   class="w-100 h-100 position-absolute"
-                   alt="EMNLP 2024 Photo"
-                   style="object-fit: cover; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
+              <img src="{{ '/assets/img/gallery/emnlp2024_' | append: i | append: '.jpg' | relative_url }}"
+                   class="w-1f00 h-100 position-absolute"
+                   alt="EMNLP 2024 Photo {{ i }}"
+                   style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
+                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
+
+              <div class="gallery-placeholder d-flex flex-column align-items-center justify-content-center w-100 h-100 p-3 text-center"
+                   style="border: 2px dashed var(--global-theme-color); border-radius: 12px; background: var(--global-card-bg-color); opacity: 0.85; transition: all 0.3s ease;">
+                <i class="fa-regular fa-image mb-2" style="font-size: 2.2rem; color: var(--global-theme-color); opacity: 0.7;"></i>
+                <span style="font-size: 0.85rem; font-weight: 600; color: var(--global-text-color);">Photo {{ i }}</span>
+                <small class="text-muted" style="font-size: 0.7rem; margin-top: 5px; word-break: break-all;">assets/img/gallery/emnlp2024_{{ i }}.jpg</small>
+              </div>
             </div>
           </div>
           {% endfor %}
@@ -142,17 +174,25 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://aclanthology.org/2023.emnlp-main.987/" target="_blank" rel="noopener noreferrer">"Elevating Code-mixed Text Handling through Auditory Information of Words"</a>
         </p>
-                <div class="row mt-3">
-          {% assign conf_photos = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/emnlp2023'" %}
-          {% for photo in conf_photos %}
+        <div class="row">
+          {% for i in (1..3) %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ photo.path | relative_url }}"
+              <img src="{{ '/assets/img/gallery/emnlp2023_' | append: i | append: '.jpg' | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="EMNLP 2023 Photo"
-                   style="object-fit: cover; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
+                   alt="EMNLP 2023 Photo {{ i }}"
+                   style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
+                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
+
+              <div class="gallery-placeholder d-flex flex-column align-items-center justify-content-center w-100 h-100 p-3 text-center"
+                   style="border: 2px dashed var(--global-theme-color); border-radius: 12px; background: var(--global-card-bg-color); opacity: 0.85; transition: all 0.3s ease;">
+                <i class="fa-regular fa-image mb-2" style="font-size: 2.2rem; color: var(--global-theme-color); opacity: 0.7;"></i>
+                <span style="font-size: 0.85rem; font-weight: 600; color: var(--global-text-color);">Photo {{ i }}</span>
+                <small class="text-muted" style="font-size: 0.7rem; margin-top: 5px; word-break: break-all;">assets/img/gallery/emnlp2023_{{ i }}.jpg</small>
+              </div>
             </div>
           </div>
           {% endfor %}
@@ -171,17 +211,20 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://link.springer.com/chapter/10.1007/978-3-031-28244-7_43" target="_blank" rel="noopener noreferrer">"Service is Good, Very Good or Excellent? Towards Aspect-Based Sentiment Intensity Analysis"</a> (my first international travel.)
         </p>
-                <div class="row mt-3">
-          {% assign conf_photos = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/ecir2023'" %}
-          {% for photo in conf_photos %}
+        <div class="row">
+          {% for i in (1..3) %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ photo.path | relative_url }}"
+              <img src="{{ '/assets/img/ecir2023_' | append: i | append: '.jpg' | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="ECIR 2023 Photo"
-                   style="object-fit: cover; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
+                   alt="ECIR 2023 Photo {{ i }}"
+                   style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
+                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
+
+              
             </div>
           </div>
           {% endfor %}
