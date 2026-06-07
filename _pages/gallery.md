@@ -204,7 +204,7 @@ nav_order: 8
               <img src="{{ '/assets/img/ecir2023_' | append: i | append: '.jpg' | relative_url }}"
                    class="w-100 h-100 position-absolute"
                    alt="ECIR 2023 Photo {{ i }}"
-                   style="object-fit: contain; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
+                   style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
                    onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                    onmouseover="this.style.transform='scale(1.05)'"
