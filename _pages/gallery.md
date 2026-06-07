@@ -94,17 +94,10 @@ nav_order: 8
                    class="w-100 h-100 position-absolute"
                    alt="NAACL 2025 Photo {{ i }}"
                    style="object-fit: contain; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.parentElement.parentElement.style.display='none';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
-
-              <div class="gallery-placeholder d-flex flex-column align-items-center justify-content-center w-100 h-100 p-3 text-center"
-                   style="border: 2px dashed var(--global-theme-color); border-radius: 12px; background: var(--global-card-bg-color); opacity: 0.85; transition: all 0.3s ease;">
-                <i class="fa-regular fa-image mb-2" style="font-size: 2.2rem; color: var(--global-theme-color); opacity: 0.7;"></i>
-                <span style="font-size: 0.85rem; font-weight: 600; color: var(--global-text-color);">Photo {{ i }}</span>
-                <small class="text-muted" style="font-size: 0.7rem; margin-top: 5px; word-break: break-all;">assets/img/gallery/naacl2025_{{ i }}.jpg</small>
-              </div>
             </div>
           </div>
           {% endfor %}
@@ -131,17 +124,10 @@ nav_order: 8
                    class="w-1f00 h-100 position-absolute"
                    alt="EMNLP 2024 Photo {{ i }}"
                    style="object-fit: contain; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.parentElement.parentElement.style.display='none';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
-
-              <div class="gallery-placeholder d-flex flex-column align-items-center justify-content-center w-100 h-100 p-3 text-center"
-                   style="border: 2px dashed var(--global-theme-color); border-radius: 12px; background: var(--global-card-bg-color); opacity: 0.85; transition: all 0.3s ease;">
-                <i class="fa-regular fa-image mb-2" style="font-size: 2.2rem; color: var(--global-theme-color); opacity: 0.7;"></i>
-                <span style="font-size: 0.85rem; font-weight: 600; color: var(--global-text-color);">Photo {{ i }}</span>
-                <small class="text-muted" style="font-size: 0.7rem; margin-top: 5px; word-break: break-all;">assets/img/gallery/emnlp2024_{{ i }}.jpg</small>
-              </div>
             </div>
           </div>
           {% endfor %}
@@ -168,17 +154,10 @@ nav_order: 8
                    class="w-100 h-100 position-absolute"
                    alt="EMNLP 2023 Photo {{ i }}"
                    style="object-fit: contain; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.parentElement.parentElement.style.display='none';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
-
-              <div class="gallery-placeholder d-flex flex-column align-items-center justify-content-center w-100 h-100 p-3 text-center"
-                   style="border: 2px dashed var(--global-theme-color); border-radius: 12px; background: var(--global-card-bg-color); opacity: 0.85; transition: all 0.3s ease;">
-                <i class="fa-regular fa-image mb-2" style="font-size: 2.2rem; color: var(--global-theme-color); opacity: 0.7;"></i>
-                <span style="font-size: 0.85rem; font-weight: 600; color: var(--global-text-color);">Photo {{ i }}</span>
-                <small class="text-muted" style="font-size: 0.7rem; margin-top: 5px; word-break: break-all;">assets/img/gallery/emnlp2023_{{ i }}.jpg</small>
-              </div>
             </div>
           </div>
           {% endfor %}
@@ -205,12 +184,10 @@ nav_order: 8
                    class="w-100 h-100 position-absolute"
                    alt="ECIR 2023 Photo {{ i }}"
                    style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.nextElementSibling.style.display='none'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
+                   onerror="this.parentElement.parentElement.style.display='none';"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
-
-              
             </div>
           </div>
           {% endfor %}
