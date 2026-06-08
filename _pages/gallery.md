@@ -26,16 +26,15 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented two papers at VarDial: <a href="https://aclanthology.org/2026.vardial-1.24/" target="_blank" rel="noopener noreferrer">"Improving Dialect Robustness in Large Language Models via LoRA and Mixture-of-Experts"</a> and <a href="https://aclanthology.org/2026.vardial-1.14/" target="_blank" rel="noopener noreferrer">"Indic-TunedLens: Interpreting Multilingual Models in Indian Languages"</a>
         </p>
-        <div class="row">
-          {% for i in (1..3) %}
+                <div class="row">
+          {% assign eacl2026_files = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/eacl2026_'" %}
+          {% for file in eacl2026_files %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ '/assets/img/gallery/eacl2026_' | append: i | append: '.jpg' | relative_url }}"
+              <img src="{{ file.path | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="EACL 2026 Photo {{ i }}"
-                   style="object-fit: contain; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.parentElement.parentElement.style.display='none';"
+                   alt="EACL 2026 Photo"
+                   style="object-fit: contain; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
             </div>
@@ -56,16 +55,15 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://aclanthology.org/2025.findings-emnlp.1208/" target="_blank" rel="noopener noreferrer">"I-GUARD: Interpretability-Guided Parameter Optimization for Adversarial Defense"</a>
         </p>
-        <div class="row">
-          {% for i in (1..2) %}
+                <div class="row">
+          {% assign emnlp2025_files = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/emnlp2025_'" %}
+          {% for file in emnlp2025_files %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ '/assets/img/gallery/emnlp2025_' | append: i | append: '.jpg' | relative_url }}"
+              <img src="{{ file.path | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="EMNLP 2025 Photo {{ i }}"
-                   style="object-fit: contain; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.parentElement.parentElement.style.display='none';"
+                   alt="EMNLP 2025 Photo"
+                   style="object-fit: contain; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
             </div>
@@ -86,16 +84,15 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://aclanthology.org/2025.naacl-long.534/" target="_blank" rel="noopener noreferrer">"FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models"</a> (My first paper as Dr. Mamta.)
         </p>
-        <div class="row">
-          {% for i in (1..3) %}
+                <div class="row">
+          {% assign naacl2025_files = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/naacl2025_'" %}
+          {% for file in naacl2025_files %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ '/assets/img/gallery/naacl2025_' | append: i | append: '.jpg' | relative_url }}"
+              <img src="{{ file.path | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="NAACL 2025 Photo {{ i }}"
-                   style="object-fit: contain; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.parentElement.parentElement.style.display='none';"
+                   alt="NAACL 2025 Photo"
+                   style="object-fit: contain; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
             </div>
@@ -116,16 +113,15 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://aclanthology.org/2024.emnlp-main.1172/" target="_blank" rel="noopener noreferrer">"BiasWipe: Mitigating Unintended Bias in Text Classifiers through Model Interpretability"</a>
         </p>
-        <div class="row">
-          {% for i in (1..3) %}
+                <div class="row">
+          {% assign emnlp2024_files = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/emnlp2024_'" %}
+          {% for file in emnlp2024_files %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ '/assets/img/gallery/emnlp2024_' | append: i | append: '.jpg' | relative_url }}"
-                   class="w-1f00 h-100 position-absolute"
-                   alt="EMNLP 2024 Photo {{ i }}"
-                   style="object-fit: contain; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.parentElement.parentElement.style.display='none';"
+              <img src="{{ file.path | relative_url }}"
+                   class="w-100 h-100 position-absolute"
+                   alt="EMNLP 2024 Photo"
+                   style="object-fit: contain; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
             </div>
@@ -146,16 +142,15 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://aclanthology.org/2023.emnlp-main.987/" target="_blank" rel="noopener noreferrer">"Elevating Code-mixed Text Handling through Auditory Information of Words"</a>
         </p>
-        <div class="row">
-          {% for i in (1..3) %}
+                <div class="row">
+          {% assign emnlp2023_files = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/emnlp2023_'" %}
+          {% for file in emnlp2023_files %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ '/assets/img/gallery/emnlp2023_' | append: i | append: '.jpg' | relative_url }}"
+              <img src="{{ file.path | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="EMNLP 2023 Photo {{ i }}"
-                   style="object-fit: contain; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.parentElement.parentElement.style.display='none';"
+                   alt="EMNLP 2023 Photo"
+                   style="object-fit: contain; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
             </div>
@@ -176,16 +171,15 @@ nav_order: 8
           <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
           Presented <a href="https://link.springer.com/chapter/10.1007/978-3-031-28244-7_43" target="_blank" rel="noopener noreferrer">"Service is Good, Very Good or Excellent? Towards Aspect-Based Sentiment Intensity Analysis"</a> (my first international travel.)
         </p>
-        <div class="row">
-          {% for i in (1..3) %}
+                <div class="row">
+          {% assign ecir2023_files = site.static_files | where_exp: "item", "item.path contains '/assets/img/ecir2023_'" %}
+          {% for file in ecir2023_files %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
-              <img src="{{ '/assets/img/ecir2023_' | append: i | append: '.jpg' | relative_url }}"
+              <img src="{{ file.path | relative_url }}"
                    class="w-100 h-100 position-absolute"
-                   alt="ECIR 2023 Photo {{ i }}"
-                   style="object-fit: cover; object-position: center; display: none; transition: transform 0.4s ease; top: 0; left: 0;"
-                   onload="this.style.display='block'; this.parentElement.style.borderStyle='solid';"
-                   onerror="this.parentElement.parentElement.style.display='none';"
+                   alt="ECIR 2023 Photo"
+                   style="object-fit: cover; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
             </div>
