@@ -60,12 +60,21 @@ nav_order: 8
           {% for file in emnlp2025_files %}
           <div class="col-md-4 mb-4">
             <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
+              {% if file.path contains 'emnlp2025_2' or file.path contains 'emnlp2025_3' %}
+              <img src="{{ file.path | relative_url }}"
+                   class="w-100 h-100 position-absolute"
+                   alt="EMNLP 2025 Photo"
+                   style="object-fit: cover; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
+                   onmouseover="this.style.transform='scale(1.05)'"
+                   onmouseout="this.style.transform='scale(1)'">
+              {% else %}
               <img src="{{ file.path | relative_url }}"
                    class="w-100 h-100 position-absolute"
                    alt="EMNLP 2025 Photo"
                    style="object-fit: contain; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
                    onmouseover="this.style.transform='scale(1.05)'"
                    onmouseout="this.style.transform='scale(1)'">
+              {% endif %}
             </div>
           </div>
           {% endfor %}
