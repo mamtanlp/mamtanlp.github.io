@@ -25,4 +25,5 @@ nav_order: 3
   <li>Lewis Kai Ho Wong, BSc, King's College London</li>
   <li>Sanjh Maheshwari, MSc, King's College London</li>
   <li>Aniket Singh Rajpoot, MSc, King's College London</li>
+  <li>Mentoring a group of EPSRC-funded research interns on AI safety.</li>
 </ul>
