@@ -15,6 +15,35 @@ nav_order: 8
   <!-- Gallery List -->
   <div class="gallery-timeline">
 
+    <!-- ACL 2026 -->
+    <div class="card mb-5 border-0 shadow-sm" style="background-color: var(--global-card-bg-color); border-radius: 16px; transition: transform 0.3s ease;">
+      <div class="card-body p-4 p-md-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-between mb-3">
+          <h3 class="card-title font-weight-bold mb-0" style="color: var(--global-theme-color); font-size: 1.6rem;">ACL 2026</h3>
+          <span class="badge font-weight-bold mt-2 mt-sm-0" style="background-color: var(--global-theme-color); color: #fff; font-size: 0.85rem; padding: 6px 14px; border-radius: 20px;">San Diego, US</span>
+        </div>
+        <p class="card-text mb-4" style="font-size: 1.05rem; color: var(--global-text-color); font-style: italic;">
+          <i class="fa-solid fa-quote-left mr-2" style="color: var(--global-theme-color); opacity: 0.6;"></i>
+          Presented two papers at ACL: "MLingualFC: Evaluating Jailbreak Vulnerabilities in Multilingual Vision-Language Models" and "TinyAttack: Exploring Stylistic Vulnerabilities in Large Language Models"
+        </p>
+        <div class="row">
+          {% assign acl2026_files = site.static_files | where_exp: "item", "item.path contains '/assets/img/gallery/acl2026_'" %}
+          {% for file in acl2026_files %}
+          <div class="col-md-4 mb-4">
+            <div class="gallery-item-container shadow-sm position-relative overflow-hidden" style="border-radius: 12px; height: 210px; background: var(--global-bg-color); border: 1px solid var(--global-divider-color);">
+              <img src="{{ file.path | relative_url }}"
+                   class="w-100 h-100 position-absolute"
+                   alt="ACL 2026 Photo"
+                   style="object-fit: contain; object-position: center; transition: transform 0.4s ease; top: 0; left: 0;"
+                   onmouseover="this.style.transform='scale(1.05)'"
+                   onmouseout="this.style.transform='scale(1)'">
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
     <!-- King's Informatics Industry Showcase -->
     <div class="card mb-5 border-0 shadow-sm" style="background-color: var(--global-card-bg-color); border-radius: 16px; transition: transform 0.3s ease;">
       <div class="card-body p-4 p-md-5">
