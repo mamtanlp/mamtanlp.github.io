@@ -217,27 +217,80 @@
       ]
     }
   ],
-  "volunteer": [
+  "service": [
     {
-      "organization": "GIAN Course",
-      "position": "Volunteer",
-      //"url": "https://example.com",
-      "startDate": "2022",
-      "endDate": "2022",
-      "summary": "GIAN course on Deep Learning Techniques for Conversational AI, IIT Patna, 2022"
-      //"highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "role": "PC Member",
+      "description": "NeurIPS, AAAI, ECAI, ACL, EMNLP, NAACL, ICONIP, ICON, ARR.",
+      "date": ""
     },
     {
-      "organization": "GIAN Course",
-      "position": "Volunteer",
-      //"url": "https://example.com",
-      "startDate": "2019",
-      "endDate": "2019",
-      "summary": "GIAN Course on Unsupervised Data Mining: From Batch to Stream Mining Algorithms, IIT Patna, 2019"
-      //"highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "role": "Area Chair",
+      "description": "ARR.",
+      "date": ""
+    },
+    {
+      "role": "Reviewer",
+      "description": "Neural Networks, Expert Systems with Applications, Information Fusion, Computer Speech and Language, Sadhna, ACM TALLIP, Computer Science, Applied Intelligence.",
+      "date": ""
+    },
+    {
+      "role": "Organizing Committee Member",
+      "description": "Workshop on Foundation Models for Social Good (Co-located with IJCAI-ECAI 2026).",
+      "url": "https://nlp4social.github.io/NSG-2026/",
+      "location": "Germany",
+      "date": "Aug 2026"
+    },
+    {
+      "role": "Organizing Committee Member",
+      "description": "Shared Task on Multilingual Safety (Co-located with ICON 2026).",
+      "url": "https://lingual-safety.github.io/",
+      "location": "India",
+      "date": "Dec 2026"
+    },
+    {
+      "role": "KCL Womxn in STEM",
+      "description": "Serving as Mentor to provide guidance, support, and expertise to help mentees achieve their professional and personal goals.",
+      "location": "London",
+      "date": "2025"
+    },
+    {
+      "role": "Student Volunteer",
+      "description": "ECIR.",
+      "location": "Dublin",
+      "date": "2023"
+    },
+    {
+      "role": "Volunteer",
+      "description": "GIAN Course on Deep Learning Techniques for Conversational AI.",
+      "location": "IIT Patna",
+      "date": "2022"
+    },
+    {
+      "role": "Volunteer",
+      "description": "Workshop on Data Visualization, Data Analysis, and Machine Learning.",
+      "location": "IIT Patna",
+      "date": "2022"
+    },
+    {
+      "role": "Volunteer",
+      "description": "CEP Course on Deep Learning for Natural Language Processing.",
+      "location": "IIT Patna",
+      "date": "2020"
+    },
+    {
+      "role": "Volunteer",
+      "description": "GIAN Course on Unsupervised Data Mining: From Batch to Stream Mining Algorithms.",
+      "location": "IIT Patna",
+      "date": "2019"
+    },
+    {
+      "role": "Organizer",
+      "description": "Technical Event POOL PUZZLE in Annual Techfest Insignia.",
+      "location": "GNDU",
+      "date": "2015"
     }
   ],
-  "references": [
+    "references": [
     {
       "name": "Dr. Asif Ekbal",
       "icon": "fa-solid fa-laptop",
