@@ -157,22 +157,6 @@
       //"url": "https://example.com"
     }
   ],
-  "certificates": [
-    {
-      "name": "GIAN Course on Deep Learning for Conversational Artificial Intelligence",
-      "date": "2019",
-      "issuer": "IIT Patna",
-      //"url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "GAIN Course on Complex Network Analysis",
-      "date": "2018",
-      "issuer": "IIT Patna",
-      //"url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    }
-  ],
   "teaching": [
     {
       "course": "Machine Learning",
