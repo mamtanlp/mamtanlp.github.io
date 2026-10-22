@@ -1,34 +1,87 @@
 <div class="news">
   {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and site.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
-      {% endif %}
-    >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and site.announcements.limit %}
-          {% assign news_limit = site.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
-    </div>
+    {% assign all_news = site.news | reverse %}
+    {% assign news_size = all_news | size %}
+    {% assign show_limit = 5 %}
+
+    <table class="table table-sm table-borderless">
+      {% for item in all_news limit: show_limit %}
+        <tr>
+          <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+          <td>
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    {% if news_size > show_limit %}
+      <div style="text-align: center; margin-top: -8px; margin-bottom: 6px;">
+        <button id="news-toggle-btn" onclick="toggleOldNews()" style="
+          background: none;
+          border: none;
+          color: var(--global-theme-color, #0075b4);
+          cursor: pointer;
+          font-size: 0.88rem;
+          font-weight: 600;
+          letter-spacing: 0.03em;
+          padding: 4px 12px;
+          border-radius: 20px;
+          transition: background 0.2s;
+        " onmouseover="this.style.background='rgba(0,117,180,0.08)'" onmouseout="this.style.background='none'">
+          ▼ &nbsp;Show older news
+        </button>
+      </div>
+
+      <div id="old-news-panel" style="
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease, opacity 0.4s ease;
+        opacity: 0;
+      ">
+        <table class="table table-sm table-borderless">
+          {% assign remaining = news_size | minus: show_limit %}
+          {% for item in all_news offset: show_limit limit: remaining %}
+            <tr>
+              <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+              <td>
+                {% if item.inline %}
+                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                {% else %}
+                  <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+
+      <script>
+        var newsOpen = false;
+        function toggleOldNews() {
+          var panel = document.getElementById('old-news-panel');
+          var btn = document.getElementById('news-toggle-btn');
+          if (!newsOpen) {
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+            panel.style.opacity = '1';
+            btn.innerHTML = '▲ &nbsp;Hide older news';
+            newsOpen = true;
+          } else {
+            panel.style.maxHeight = '0';
+            panel.style.opacity = '0';
+            btn.innerHTML = '▼ &nbsp;Show older news';
+            newsOpen = false;
+          }
+        }
+      </script>
+    {% endif %}
+
   {% else %}
     <p>No news so far...</p>
   {% endif %}
 </div>
+
