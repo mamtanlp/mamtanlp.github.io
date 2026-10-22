@@ -109,32 +109,34 @@
   ],
   "awards": [
     {
-      "title": "Google Travel Grant",
+      "title": "Google Travel Award",
       "date": "2024",
-      "awarder": "Google",
-      //"url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "To attend EMNLP 2024"
+      "awarder": "Google India",
+      "summary": "To travel and present a paper at EMNLP."
     },
     {
-      "title": "Microsoft Travel Grant",
+      "title": "Microsoft Travel Award",
       "date": "2023",
-      "awarder": "Microsoft",
-      //"url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "To attend EMNLP 2023"
+      "awarder": "Microsoft India",
+      "summary": "To travel and present a paper at EMNLP."
     },
     {
-      "title": "ACM Travel Grant",
+      "title": "ACM Travel Award",
       "date": "2023",
-      "awarder": "ACM-W India",
-      //"url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "To attend ECIR 2023"
+      "awarder": "ACM India",
+      "summary": "To travel and present a paper at ECIR."
     },
     {
-      "title": "Branch Topper",
-      "date": "2018",
-      "awarder": "NIT Patna",
-      //"url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "Branch Topper in Masters"
+      "title": "Diversity and Inclusion Grant",
+      "date": "2023",
+      "awarder": "EMNLP",
+      "summary": "To travel and present a paper at EMNLP."
+    },
+    {
+      "title": "Department Gold Medalist (M.Tech.)",
+      "date": "2016",
+      "awarder": "National Institute of Technology Patna (NITP)",
+      "summary": ""
     }
   ],
   "projects": [
