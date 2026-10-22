@@ -171,18 +171,48 @@
       "icon": "fa-solid fa-tag"
     }
   ],
-  "skills": [
+  "teaching": [
     {
-      "name": "Machine/Deep Learning",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": ["Regression", "Classification", "Natural Language Processing"]
+      "course": "Machine Learning",
+      "institution": "King's College London (KCL)",
+      "highlights": [
+        "Delivered tutorials on various machine learning topics, conducted lab sessions."
+      ]
     },
     {
-      "name": "Lib/Frameworks",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": ["Scikit-learn", "Keras", "TensorFlow", "PyTorch", "Hugging Face"]
+      "course": "Python – Teaching Assistant",
+      "institution": "Indian Institute of Technology Patna (IITP)",
+      "highlights": [
+        "Conducted lab sessions, Prepared study materials."
+      ]
+    },
+    {
+      "course": "Natural Language Processing – Teaching Assistant",
+      "institution": "Indian Institute of Technology Patna (IITP)",
+      "highlights": [
+        "Prepared study materials, Coursework marking, Delivered tutorials."
+      ]
+    },
+    {
+      "course": "Innovation Lab – Teaching Assistant",
+      "institution": "Indian Institute of Technology Patna (IITP)",
+      "highlights": [
+        "Helped students with their machine learning projects during lab sessions."
+      ]
+    },
+    {
+      "course": "Machine Learning – Teaching Assistant",
+      "institution": "Indian Institute of Technology Patna (IITP)",
+      "highlights": [
+        "Conducted Lab Sessions, Delivered tutorials, Prepared study materials, Coursework marking."
+      ]
+    },
+    {
+      "course": "Programming Language C – Teaching Assistant",
+      "institution": "National Institute of Technology Patna (NITP)",
+      "highlights": [
+        "Conducted Lab sessions, Delivered tutorials."
+      ]
     }
   ],
   "volunteer": [
