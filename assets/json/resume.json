@@ -23,12 +23,27 @@
   },
   "work": [
     {
-      "name": "KCL",
-      "position": "Postdoctoral Researcher",
+      "name": "Department of Informatics, King's College London (KCL)",
+      "position": "Postdoctoral Research Associate",
       "url": "https://www.kcl.ac.uk/people/mamta",
-      "startDate": "2024",
-      "endDate": "-",
-      "summary": "Working on the robustness of fact verification system. Teaching Assistant for Machine Learning",
+      "startDate": "2025-01",
+      "endDate": "present",
+      "summary": "Researcher in Natural Language Processing (NLP).",
+      "highlights": [
+        "Working on assessing and improving the robustness of NLP systems.",
+        "Built adversarial evaluation frameworks to identify vulnerabilities in LLMs under Unicode-based stylistic and linguistic perturbations, uncovering systematic robustness failures across diverse subpopulations.",
+        "Developed interpretability-based methods to enhance the robustness of LLMs.",
+        "Designed red-teaming benchmark to evaluate safety robustness of open-source LLMs across multiple languages.",
+        "Mentor in KCL Womxn in STEM."
+      ]
+    },
+    {
+      "name": "Department of Informatics, King's College London",
+      "position": "Research Assistant",
+      "url": "https://www.kcl.ac.uk/people/mamta",
+      "startDate": "2024-07",
+      "endDate": "2024-12",
+      "summary": "Research Assistant in the Department of Informatics, King's College London.",
       "highlights": ["Researcher in Natural Language Processing"]
     },
     {
