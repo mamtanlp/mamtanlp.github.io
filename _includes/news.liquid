@@ -2,135 +2,83 @@
   {% if site.news != blank %}
     {% assign all_news = site.news | reverse %}
     {% assign news_size = all_news | size %}
+    {% assign show_limit = 5 %}
 
-    <!-- News Slider -->
-    <div class="news-slider-wrapper" style="position: relative;">
+    <table class="table table-sm table-borderless">
+      {% for item in all_news limit: show_limit %}
+        <tr>
+          <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+          <td>
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
 
-      <!-- Prev / Next arrow buttons -->
-      <button class="news-arrow news-arrow-left" onclick="newsSlide(-1)" aria-label="Previous news">&#8249;</button>
-      <button class="news-arrow news-arrow-right" onclick="newsSlide(1)" aria-label="Next news">&#8250;</button>
+    {% if news_size > show_limit %}
+      <div style="text-align: center; margin-top: -8px; margin-bottom: 6px;">
+        <button id="news-toggle-btn" onclick="toggleOldNews()" style="
+          background: none;
+          border: none;
+          color: var(--global-theme-color, #0075b4);
+          cursor: pointer;
+          font-size: 0.88rem;
+          font-weight: 600;
+          letter-spacing: 0.03em;
+          padding: 4px 12px;
+          border-radius: 20px;
+          transition: background 0.2s;
+        " onmouseover="this.style.background='rgba(0,117,180,0.08)'" onmouseout="this.style.background='none'">
+          ▼ &nbsp;Show older news
+        </button>
+      </div>
 
-      <!-- Slide viewport -->
-      <div class="news-slider-viewport">
-        <div class="news-slider-track" id="news-slider-track">
-          {% for item in all_news %}
-            <div class="news-slide">
-              <span class="news-slide-date">{{ item.date | date: '%b %d, %Y' }}</span>
-              <span class="news-slide-content">
+      <div id="old-news-panel" style="
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease, opacity 0.4s ease;
+        opacity: 0;
+      ">
+        <table class="table table-sm table-borderless">
+          {% assign remaining = news_size | minus: show_limit %}
+          {% for item in all_news offset: show_limit limit: remaining %}
+            <tr>
+              <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+              <td>
                 {% if item.inline %}
                   {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
                 {% else %}
                   <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
                 {% endif %}
-              </span>
-            </div>
+              </td>
+            </tr>
           {% endfor %}
-        </div>
+        </table>
       </div>
 
-      <!-- Dot indicators -->
-      <div class="news-dots" id="news-dots">
-        {% for item in all_news %}
-          <span class="news-dot {% if forloop.first %}news-dot-active{% endif %}" onclick="newsGoTo({{ forloop.index0 }})"></span>
-        {% endfor %}
-      </div>
-    </div>
-
-    <style>
-      .news-slider-wrapper {
-        padding: 0 36px;
-        user-select: none;
-      }
-      .news-slider-viewport {
-        overflow: hidden;
-        border-radius: 8px;
-      }
-      .news-slider-track {
-        display: flex;
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .news-slide {
-        min-width: 100%;
-        padding: 14px 10px 10px 10px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-      }
-      .news-slide-date {
-        font-size: 0.78rem;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        color: var(--global-theme-color, #0075b4);
-        text-transform: uppercase;
-      }
-      .news-slide-content {
-        font-size: 0.93rem;
-        line-height: 1.55;
-        color: var(--global-text-color, #333);
-      }
-      .news-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-60%);
-        background: none;
-        border: none;
-        font-size: 2rem;
-        font-weight: 300;
-        color: var(--global-theme-color, #0075b4);
-        cursor: pointer;
-        padding: 0 4px;
-        line-height: 1;
-        z-index: 2;
-        opacity: 0.7;
-        transition: opacity 0.2s;
-      }
-      .news-arrow:hover { opacity: 1; }
-      .news-arrow-left  { left: 0; }
-      .news-arrow-right { right: 0; }
-      .news-dots {
-        display: flex;
-        justify-content: center;
-        gap: 6px;
-        margin-top: 10px;
-        flex-wrap: wrap;
-      }
-      .news-dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--global-divider-color, #ccc);
-        cursor: pointer;
-        transition: background 0.25s, transform 0.25s;
-      }
-      .news-dot-active {
-        background: var(--global-theme-color, #0075b4);
-        transform: scale(1.35);
-      }
-    </style>
-
-    <script>
-      (function() {
-        var current = 0;
-        var total = {{ news_size }};
-        var track = document.getElementById('news-slider-track');
-        var dots  = document.querySelectorAll('.news-dot');
-
-        function goTo(n) {
-          current = (n + total) % total;
-          track.style.transform = 'translateX(-' + (current * 100) + '%)';
-          dots.forEach(function(d, i) {
-            d.classList.toggle('news-dot-active', i === current);
-          });
+      <script>
+        var newsOpen = false;
+        function toggleOldNews() {
+          var panel = document.getElementById('old-news-panel');
+          var btn = document.getElementById('news-toggle-btn');
+          if (!newsOpen) {
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+            panel.style.opacity = '1';
+            btn.innerHTML = '▲ &nbsp;Hide older news';
+            newsOpen = true;
+          } else {
+            panel.style.maxHeight = '0';
+            panel.style.opacity = '0';
+            btn.innerHTML = '▼ &nbsp;Show older news';
+            newsOpen = false;
+          }
         }
-
-        window.newsSlide = function(dir) { goTo(current + dir); };
-        window.newsGoTo  = function(n)   { goTo(n); };
-
-        // Auto-advance every 5 seconds
-        setInterval(function() { goTo(current + 1); }, 5000);
-      })();
-    </script>
+      </script>
+    {% endif %}
 
   {% else %}
     <p>No news so far...</p>
