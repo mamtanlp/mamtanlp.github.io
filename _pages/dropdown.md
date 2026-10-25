@@ -10,6 +10,8 @@ children:
   - title: divider
   - title: people
     permalink: /profiles/
+  - title: collaborators
+    permalink: /collaborators/
   - title: divider
   - title: projects
     permalink: /projects/
